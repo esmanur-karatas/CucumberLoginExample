@@ -1,49 +1,40 @@
-# Proje Açıklaması
+```
+# Cucumber Login Test Project
 
-Bu proje, **Cucumber** framework'ünü kullanarak basit bir web otomasyon testi senaryosu geliştirme amacıyla oluşturulmuştur. **Cucumber**, BDD (Behavior-Driven Development) yaklaşımını destekleyen bir test otomasyon aracıdır ve testlerin hem teknik hem de teknik olmayan ekipler tarafından anlaşılabilir bir şekilde yazılmasına olanak tanır.
+## Proje Amacı
 
-## Proje İçeriği
+Bu proje, test otomasyonu ve yazılım testi süreçlerini anlamak ve deneyimlemek amacıyla oluşturulmuştur. Cucumber ile Behavior-Driven Development (BDD) metodolojisini kullanarak test senaryoları yazmayı ve bu senaryoları otomatikleştirmeyi hedeflemektedir.
 
-Proje kapsamında şu teknolojiler ve yöntemler kullanılmış ve öğrenilmiştir:
+## Projede Kullanılan ve Öğrenilen Teknolojiler
 
-1. **Cucumber Konfigürasyonu**
-   - `@RunWith` ve `@CucumberOptions` anotasyonlarıyla test senaryolarının yapılandırılması.
-   - `features`, `glue`, ve `plugin` ayarlarıyla senaryoların ve raporlamaların yönetimi.
+- **Cucumber Framework**: BDD metodolojisine uygun olarak test senaryolarını yazmak ve çalıştırmak için kullanıldı.
+- **JUnit**: Testlerin yürütülmesi için kullanıldı.
+- **Selenium WebDriver**: Web uygulamalarında kullanıcı davranışlarını simüle ederek otomatik testler gerçekleştirmek için kullanıldı.
+- **Page Object Model (POM)**: Daha düzenli ve sürdürülebilir kod yazmak amacıyla sayfa bazlı modelleme yöntemi uygulandı.
+- **Maven**: Projenin bağımlılık yönetimi ve yapılandırılması için kullanıldı.
+- **Java**: Tüm otomasyon test senaryoları Java dili kullanılarak yazıldı.
+- **Bonigarcia WebDriverManager**: WebDriver'ların kolayca yönetimi ve konfigürasyonu sağlandı.
 
-2. **Page Object Model (POM)**
-   - Testlerde kullanılan sayfa elementlerinin ve işlemlerinin ayrı bir sınıfta düzenlenmesi.
-   - `PageFactory` yapısı kullanılarak elementlerin tanımlanması.
+## Projenin İçeriği
 
-3. **Scenario Outline Kullanımı**
-   - Farklı kullanıcı bilgileriyle aynı senaryonun tekrar test edilmesi.
+Bu proje, bir web sitesinin giriş fonksiyonlarını test etmeye yönelik aşağıdaki özellikleri içerir:
 
-4. **JUnit ile Entegrasyon**
-   - Testlerin JUnit framework'ü üzerinden çalıştırılması ve sonuçların doğrulanması.
+- **Login Testi**: Doğru kullanıcı adı ve şifre ile giriş yapıldığında başarılı bir giriş mesajını doğrular.
+- **Home Page Testi**: Anasayfanın doğru bir şekilde yüklendiğini ve belirli bir metnin görüntülendiğini kontrol eder.
+- **Scenario Outline Kullanımı**: Aynı test senaryosunu farklı veri setleri ile çalıştırarak tekrar kullanım avantajı sağlandı.
 
-5. **Driver Yönetimi**
-   - WebDriver kurulum ve yönetimi için `utilities.Driver` sınıfının kullanımı.
-   - Singleton tasarım deseni ile tek bir WebDriver örneği üzerinden işlem yapılması.
+## Projede Öğrenilenler
 
-6. **BDD ve Gherkin Syntax**
-   - **Feature** dosyaları içerisinde anlaşılır bir şekilde test adımlarının yazılması.
-   - `Given`, `When`, `Then`, `And` gibi anahtar kelimelerin senaryolarda kullanılması.
+- BDD metodolojisi ile test senaryoları yazma ve bunları çalıştırma.
+- Selenium WebDriver ile sayfa etkileşimlerini otomatikleştirme.
+- JUnit ve Cucumber entegrasyonu.
+- Page Object Model (POM) kullanarak temiz ve sürdürülebilir kod yazma.
+- WebDriverManager ile tarayıcı sürücülerinin kolay yönetimi.
 
-## Test Senaryoları
+Proje, yazılım testi konusundaki bilgi ve becerileri geliştirmek için etkili bir öğrenme aracı olmuştur.
+```
 
-1. **Login Testi**
-   - Kullanıcı, geçerli bir kullanıcı adı ve şifre girerek başarıyla giriş yapar.
 
-2. **Ana Sayfa Yüklenme Testi**
-   - Ana sayfanın yüklenip yüklenmediği kontrol edilir ve belirli bir metin doğrulanır.
-
-## Kullanılan Araçlar ve Teknolojiler
-- **Java**: Test senaryolarının yazılması.
-- **Selenium WebDriver**: Web tarayıcısının otomasyonu.
-- **JUnit**: Testlerin çalıştırılması.
-- **Cucumber**: BDD tabanlı senaryoların oluşturulması ve yürütülmesi.
-- **WebDriverManager**: WebDriver kurulum işlemlerinin otomasyonu.
-
-Bu proje, hem test otomasyonu araçlarını daha iyi anlamak hem de BDD yaklaşımını gerçek bir senaryoda uygulamak için oluşturulmuştur.
 
 
 ![image](https://github.com/user-attachments/assets/d51a3de2-7bc3-4251-92e8-dd9857a8d06b)
