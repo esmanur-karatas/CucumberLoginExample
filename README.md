@@ -1,4 +1,4 @@
-```
+
 # Cucumber Login Test Project
 
 ## Proje Amacı
@@ -32,7 +32,7 @@ Bu proje, bir web sitesinin giriş fonksiyonlarını test etmeye yönelik aşağ
 - WebDriverManager ile tarayıcı sürücülerinin kolay yönetimi.
 
 Proje, yazılım testi konusundaki bilgi ve becerileri geliştirmek için etkili bir öğrenme aracı olmuştur.
-```
+
 
 
 
